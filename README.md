@@ -1,32 +1,68 @@
-🎓 Campus Placement AI Chatbot 🤖
-An intelligent AI-powered chatbot designed to assist students with campus placement preparation — from mock interviews and resume guidance to aptitude and coding practice support.
+🎓 Campus Placement Prediction
+A Machine Learning web application that predicts whether a student will get placed based on academic performance, internships, projects, aptitude score, and soft skills.
 
-🚀 Features
-✅ AI Chatbot Assistance
+The project uses a Random Forest Classifier and is deployed as an interactive Streamlit web application.
 
-Answers placement-related queries intelligently.
-Helps students with resume improvement tips, company insights, and interview guidance.
-✅ Aptitude & Technical Test Support
+📌 Features
+Predicts placement status (Placed / Not Placed)
+Shows placement probability
+Interactive Streamlit UI
+Multiple theme options
+Visualization of placement probability
+Real-time predictions
+🧠 Machine Learning Model
+Algorithm used:
 
-Provides mock aptitude and reasoning questions.
-Offers explanations and solutions for better understanding.
-✅ Interview Preparation
+Random Forest Classifier
+Libraries used:
 
-Simulates HR and technical interviews.
-Gives feedback and improvement suggestions.
-✅ Data Analysis & Insights
+Scikit-learn
+Pandas
+NumPy
+Joblib
+Model workflow:
 
-Uses trained ML models to analyze placement data.
-Predicts placement chances based on key factors (e.g., CGPA, test score, communication skills).
-✅ User-Friendly Interface
+Data preprocessing
+Train-Test split
+Model training
+Model evaluation
+Model serialization using joblib
+📊 Input Features
+The model predicts placement based on the following features:
 
-Simple, interactive UI for easy use.
-Built using Python and Streamlit/Flask (depending on your implementation).
-🧠 Tech Stack
-Component	Technology
-Frontend	Streamlit / Flask Web App
-Backend	Python
-Machine Learning	Scikit-learn, Pandas, NumPy
-Model Storage	.pkl files (trained models)
-Dataset	Placement_Data_Full_Class.csv
-API Integration	Groq API (for LLM responses)
+Feature	Description
+CGPA	Student CGPA
+Internships	Number of internships
+Projects	Number of academic/industry projects
+Workshops	Number of workshops attended
+AptitudeScore	Aptitude test score
+SoftSkills	Soft skills rating (1–10)
+PlacementTraining	Whether student took placement training
+🖥️ Application Interface
+The Streamlit app allows users to:
+
+Enter academic details
+Select placement training status
+Predict placement result instantly
+View probability and visualization
+📈 Model Evaluation
+Metrics used:
+
+Accuracy Score
+Confusion Matrix
+Classification Report
+The model predicts placement with high accuracy based on academic performance and training features.
+
+🌐 Deployment
+This project can be deployed using:
+
+Streamlit Cloud
+🛠️ Technologies Used
+Python
+Streamlit
+Scikit-learn
+Pandas
+NumPy
+Joblib
+Git
+GitHub
