@@ -44,11 +44,13 @@ elif theme == "Red":
         </style>
         """, unsafe_allow_html=True)
 
-else:
+else:  
     st.markdown("""
         <style>
-        .stApp { background-color: #ffffff; color: #000000; }
-        .stButton>button { background-color: #ffcc00; color: #000000; }
+        .stApp { background-color: #e6f0ff; color: #000033; }
+        .stTextInput>div>div>input { background-color: #ffffff; color: #000033; }
+        .stSlider>div>div>div { color: #000033; }
+        .stButton>button { background-color: #0052cc; color: #ffffff; }
         </style>
         """, unsafe_allow_html=True)
 
